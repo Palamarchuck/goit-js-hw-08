@@ -38,8 +38,8 @@ function populateTextarea() {
     const savedMessage = localStorage.getItem(STORAGE_KEY);
     if (savedMessage) {
         const formData = JSON.parse(savedMessage);
-        email.value = formData.email;
-        message.value = formData.message;
+        refs.email.value = formData.email;
+        refs.message.value = formData.message;
 
     }
 }
